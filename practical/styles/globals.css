@@ -1,0 +1,67 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-link {
+    @apply font-semibold relative text-black cursor-pointer text-[15px] w-fit md:block after:block after:content-[''] 
+    after:absolute after:h-[3px] after:bg-yellow-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center hidden;
+
+
+  }
+
+  ;
+
+  .arrowdown {
+    @apply text-[16px] ps-1.5 mt-1
+  };
+
+  .br-min {
+    display: block;
+    margin-bottom: -1em;
+  };
+
+  .container {
+    @apply w-full max-w-[800px] mx-auto my-0 px-[30px] py-[100px];
+  };
+  
+ 
+  .image-stack {
+    @apply relative w-full;
+  };
+  .image-stack__item--bottom {
+    @apply  w-4/5 z-[-1] ml-[5rem] right-0 top-0 rounded-xl;
+  };
+  .image-stack__item--top {
+    @apply  w-4/5 pr-[20%] mt-[-20rem]  pt-[150px] ;
+  };
+  img {
+    @apply w-[300px] h-[350px] block;
+  }
+  
+
+  .talkbubble {
+    @apply w-[150px] h-[100px] relative before:content-[""] before:absolute before:w-0 before:h-0 before:border-r-[32px] before:border-r-[rgb(245,118,63)] before:border-b-[16px] before:border-y-transparent before:border-t before:border-solid before:right-full;
+    background: rgb(245, 118, 63);
+    -moz-border-radius: 10px;
+  }
+  
+  .parallelogram {
+    @apply w-[90px] h-[90px] skew-x-[50deg] rotate-[50deg];
+    background: rgb(17, 78, 104);
+  }
+
+  .parallelogram1 {
+    @apply w-[90px] h-[90px] skew-x-[50deg] rotate-[50deg];
+    background: rgb(242,236,236) ;
+  }
+  
+  
+  .triangle {
+    @apply w-0 h-0 border-r-[80px] border-r-transparent border-b-[100px] border-b-[rgb(245,118,63)] border-solid relative;
+  }
+  
+  
+
+}
